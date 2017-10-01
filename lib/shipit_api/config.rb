@@ -1,4 +1,4 @@
-module ShipitApi
+module ShipitAPI
   class Config
     attr_accessor :x_shipit_email, :x_shipit_access_token
   end

@@ -1,5 +1,5 @@
-module ShipitApi
-  class Status
+module ShipitAPI
+  class Status < Base
     def get
     end
   end

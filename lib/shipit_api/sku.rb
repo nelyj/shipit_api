@@ -1,5 +1,5 @@
-module ShipitApi
-  class Sku
+module ShipitAPI
+  class Sku < Base
     def get
     end
   end

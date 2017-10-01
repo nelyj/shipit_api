@@ -1,8 +1,5 @@
-module ShipitApi
-  class Package
-    include HTTParty
-    base_uri ShipitApi::VERSION::BASE_URL
-
+module ShipitAPI
+  class Package < Base
     def create
     end
 
