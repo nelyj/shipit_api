@@ -1,6 +1,12 @@
 module ShipitAPI
   class Config
-    attr_accessor :x_shipit_email, :x_shipit_access_token
+    attr_accessor :x_shipit_email, :x_shipit_access_token, :content_type, :accept, :version
+
+    def initialize
+      @content_type = 'application/json'.freeze
+      @accept ||= 'application/vnd.shipit.v'.freeze
+      @version ||= '2'
+    end
   end
 
   def self.config
